@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background: #f3f5f8;
+    color: #222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.card,
+.login-box {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.login-box {
+    max-width: 480px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+button {
+    padding: 11px 16px;
+    margin-top: 15px;
+    background: #202a44;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.task {
+    border: 1px solid #ddd;
+    border-left: 5px solid #e0a126;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 12px 0;
+    overflow-wrap: anywhere;
+}
+
+.task.completed {
+    border-left-color: #278451;
+}
+
+.actions,
+.header-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.actions form {
+    margin: 0;
+}
+
+.actions form button {
+    margin: 0;
+}
+
+a {
+    color: #2456a6;
+}
+
+.delete {
+    background: #b52e3a;
+}
+
+.error {
+    color: #b52e3a;
+    background: #ffe8e8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.dark {
+    background: #171a22;
+    color: #eee;
+}
+
+body.dark .card,
+body.dark .login-box {
+    background: #252a35;
+}
+
+body.dark input,
+body.dark textarea,
+body.dark select {
+    background: #171a22;
+    color: white;
+    border-color: #555;
+}
+
+body.dark .task {
+    border-color: #555;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .card,
+    .login-box {
+        padding: 18px;
+    }
+
+    header {
+        align-items: flex-start;
+    }
+}
